@@ -15,4 +15,5 @@ video {
   opacity: 0;
 }
 .slideshow div.active {
+  opacity: 1;
 }
