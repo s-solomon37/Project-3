@@ -19,7 +19,7 @@ h2 {
 }
 div.answers {
   display: grid;
-  grid-template-colums: 4, 1fr;
+  grid-template-columns: 4, 1fr;
   grid-template-rows: 1, 1fr;
   grid-template-areas: "one two three four";
   justify-content: space-around;
