@@ -3,18 +3,26 @@ var backButton = document.querySelector("#back");
 var nextButton = document.querySelector("#next");
 var slides = document.querySelectorAll(".slideshow > div");
 
-function previous() {
+function back() {
+  var newIndex = active;
   if (active <= 0) {
-    active = slides.length - 1;
+    newIndex = slides.length - 1;
   } else {
-    active--;
+    newIndex--;
   }
-  console.log(active);
+  toggle(newIndex, active);
+  active = newIndex;
 }
 
 function next() {
-  active++;
-  console.log(active);
+  var newIndex = active;
+  if (active >= slides.length - 1) {
+    newIndex = 0;
+  } else {
+    newIndex++;
+  }
+  toggle(newIndex, active);
+  active = newIndex;
 }
 
 backButton.addEventListener("click", back);
