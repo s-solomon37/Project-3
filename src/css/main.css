@@ -17,3 +17,32 @@ video {
 .slideshow div.active {
   opacity: 1;
 }
+
+h2 {
+  text-align: center;
+  margin: 5rem;
+  font-size: 5rem;
+}
+div.answers {
+  display: grid;
+  grid-template-colums: 4, 1fr;
+  grid-template-rows: 1, 1fr;
+  grid-template-areas: "one two three four";
+  justify-content: space-around;
+}
+
+div.answers button {
+  display: inline-flex;
+  flex-direction: column;
+  height: 15rem;
+  width: 15rem;
+  cursor: pointer;
+}
+
+img.button-answer {
+  object-fit: cover;
+  height: 12rem;
+  width: 14rem;
+  margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+  align-self: center;
+}
