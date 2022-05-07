@@ -19,3 +19,8 @@ function next() {
 
 backButton.addEventListener("click", back);
 nextButton.addEventListener("click", next);
+
+function toggle(to, from) {
+  slides[from].classList.remove("active");
+  slides[to].classList.add("active");
+}
